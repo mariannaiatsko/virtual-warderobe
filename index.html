@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartWardrobe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="wardrobe.png" alt="SmartWardrobe Logo" />
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">My Closet</a></li>
+        <li><a href="#">Try-On</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>SmartWardrobe</h1>
+      <p>Try on clothes virtually and find what fits you best!</p>
+    </section>
+
+    <section class="upload-section">
+      <h2>Upload Your Full-Body Photo</h2>
+      <input type="file" accept="image/*" />
+
+      <h2>Upload Clothing Image</h2>
+      <input type="file" accept="image/*" id="image-upload" />
+
+      <button id="analyze-btn">Analyze My Body Shape</button>
+      <button>Try Clothes On</button>
+    </section>
+
+    <section class="results">
+      <h2>Your Body Shape</h2>
+      <p id="body-shape">[Body shape result will appear here]</p>
+
+      <h2>Virtual Try-On Preview</h2>
+      <div id="preview-box">
+        <!-- Try-on image preview will be shown here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="footer-logo.png" alt="SmartWardrobe Footer Logo" />
+    </div>
+    <p>© 2025 SmartWardrobe. All rights reserved.</p>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+<script src="wardrobe.js"></script>
+
+</body>
+</html>
