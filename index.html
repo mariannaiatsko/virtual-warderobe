@@ -1,67 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SmartWardrobe</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Virtual Try-On</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <img src="wardrobe.png" alt="SmartWardrobe Logo" />
-    </div>
+    <div class="logo">Virtual Wardrobe</div>
     <nav>
-      <ul class="menu">
-        <li><a href="#">My Account</a></li>
-        <li><a href="#">My Closet</a></li>
-        <li><a href="#">Try-On</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
+      <a href="index1.html">HOME</a>
+      <a href="aboutus.html" target="_blank">ABOUT US</a>
+      <a href="getstarted.html" target="_blank">GET STARTED</a>
+      <a href="blog.html" target="_blank">BLOG</a>
     </nav>
+
+    <a href="login.html" target="_blank" class="login.btn">Log In</a>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>SmartWardrobe</h1>
-      <p>Try on clothes virtually and find what fits you best!</p>
-    </section>
-
-    <section class="upload-section">
-      <h2>Upload Your Full-Body Photo</h2>
-      <input type="file" accept="image/*" />
-
-      <h2>Upload Clothing Image</h2>
-      <input type="file" accept="image/*" id="image-upload" />
-
-      <button id="analyze-btn">Analyze My Body Shape</button>
-      <button>Try Clothes On</button>
-    </section>
-
-    <section class="results">
-      <h2>Your Body Shape</h2>
-      <p id="body-shape">[Body shape result will appear here]</p>
-
-      <h2>Virtual Try-On Preview</h2>
-      <div id="preview-box">
-        <!-- Try-on image preview will be shown here -->
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-logo">
-      <img src="footer-logo.png" alt="SmartWardrobe Footer Logo" />
+  <main class="hero-section">
+  <div class="hero-card">
+    <div class="hero-left">
+      <p class="subtitle">SMART STYLING</p>
+      <h1>Be your own stylist - because no one knows your style better than you!</h1>
+      <p>&#10004;Upload and organize your clothes</p>
+      <p>&#10004;Create looks with a virtual stylist</p>
+      <p>&#10004;Learn what suits your body type best</p>
+      
+      <a href="getstarted.html" target="_blank" class="cta-btn">Get Started</a>
     </div>
-    <p>© 2025 SmartWardrobe. All rights reserved.</p>
-  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
-<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
-<script src="wardrobe.js"></script>
-
+    <div class="hero-right">
+      <img src="https://images.squarespace-cdn.com/content/v1/5c3079f9f407b4ab43249324/54ace4f0-eef1-4be8-9a4a-a3cd64522c33/Brisbane+image+consultant+wardrobe.png?format=2500w" alt="Stylist image">
+    </div>
+  </div>
+</main>
 </body>
 </html>
